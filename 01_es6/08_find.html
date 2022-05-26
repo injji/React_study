@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title> </title>
+     <script>
+         const arr1  = [ 10,20,30,40,50]
+         const data = [
+              {id:1, name:'홍길동'},
+              {id:2, name:'강호동'},
+              {id:3, name:'김철수'},
+              {id:4, name:'김을동'},
+              {id:5, name:'김태리'},
+          ]
+          //find / findIndex 결과 [] 이다 배열
+          //배열.find ( 현재값  => 조건 ) -> 결과 배열
+
+          const arr2  = arr1.find( item => {
+              return item  > 30  
+          })
+          console.log( arr2 )
+
+          const arr3 = arr1.find( item => item === 40 )
+          console.log( arr3 )
+
+          const arr4 = arr1.findIndex( item => item === 30) 
+          console.log( arr4 )
+
+          const data1  = data.find( item => item.id === 1) 
+          const data2  = data.find( item => {
+              return item.id === 2
+          }) 
+          console.log( data1 )
+
+     </script>
+</head>
+<body>
+    
+    <pre>
+        Array.prototype.find()
+        시도해보기
+        find() 메서드는 
+        조건 결과를 새로운 값 반환합니다.
+
+        구문
+        arr.find(callback(element[, index[, array]])[, thisArg])
+        arr.find(function( 현재값 ) => {
+            return  조건 
+        })
+        arr.find( 현재값 => 조건  )
+
+        매개변수
+        callback : 함수 
+        element :  현재값 
+        index : 인덱스.
+        
+        반환 값
+        조건 맞는  새로운 하나의값.
+    </pre>
+</body>
+</html>

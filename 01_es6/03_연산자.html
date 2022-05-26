@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title>연산자</title>
+     <script>
+        const done1 = true 
+        const done2  = false 
+        const done3  = undefined 
+
+        const re1  = done1  === true ? '참':'거짓'
+        console.log( re1 )
+
+        const re2 = done1 === true && '참의결과값'
+        console.log( re2 )
+
+        const re3 = done1 && '참결과2'
+        console.log( re3 )
+
+        const re4 = done2 || '거짓결과'
+        const re5 = done3 || '값없음'
+        console.log( re4 )
+        console.log( re5 )
+
+        /* 
+           조건1 && 참1
+           조건2 && 참2
+           조건3 && 참3
+           조건4 && 참4        
+        */
+     </script>
+</head>
+<body>
+    
+    <pre>
+        조건  ? 참 : 거짓 
+        조건 && 참결과 
+        같다 === 
+        다르다 !==   
+
+        조건 || 거짓결과 
+    </pre>
+</body>
+</html>

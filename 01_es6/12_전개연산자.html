@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title> </title>
+     <script>
+        const data = [
+            {id:1, name:'홍길동'},
+            {id:2, name:'강호동'},
+            {id:3, name:'김철수'},
+            {id:4, name:'김을동'},
+            {id:5, name:'김태리'},
+        ]
+
+        const data1  = data.concat()   
+        const data2  = data.concat({id:6, name:'최우식'})   
+        console.log( data1 )
+        console.log( data2 )
+        console.log( '\n' )
+
+        const data3  = [...data]
+        const data4  = [...data , {id:7, name:'김다미'}]
+        console.log( data3 )
+        console.log( data4 )
+        console.log( '\n' )
+
+
+        //갱신
+        const data5 = data.map( item => {
+            if( item.id === 1 ){
+                return {
+                    ...item ,
+                    name :'김다미'
+                }
+            }else {
+                return item 
+            }
+        })
+        console.log( data5 )
+        console.log( '\n' )
+
+        //갱신
+        const data6 = data.map( item  => item.id === 2  ? {...item, name:'남주혁'} : item )
+        console.log( data6 )
+
+
+     </script>
+</head>
+<body>
+    
+    <pre>
+         
+    </pre>
+</body>
+</html>

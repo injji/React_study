@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <title> </title>
+     <script>
+         const arr1  = [ 10,20,30,40,50]
+         const data = [
+              {id:1, name:'홍길동'},
+              {id:2, name:'강호동'},
+              {id:3, name:'김철수'},
+              {id:4, name:'김을동'},
+              {id:5, name:'김태리'},
+          ]
+          //filter 결과 [] 이다 배열
+          //배열.filter ( 현재값  => 조건 ) -> 결과 배열
+          const arr2  = arr1.filter( item => {
+              return item > 30 
+          })
+          console.log( arr2 )
+
+          const arr3  = arr1.filter( item => item >= 40 )
+          console.log( arr3 )
+
+          //30을 제외한 값 출력 : 데이터 삭제원리 
+          const arr4 = arr1.filter( item => item !== 30 )
+          console.log( arr4 )
+
+          //data에서 id가 3인 사람만 출력하기 
+          const arr5 = data.filter( item => {
+              return item.id === 3 
+          })
+          console.log( arr5 )
+
+          //2번 삭제 
+          const arr6 = data.filter( item => item.id !== 2 )
+          console.log( arr6 )
+
+     </script>
+</head>
+<body>
+    
+    <pre>
+        Array.prototype.filter()
+        시도해보기
+        filter() 메서드는 
+        조건 결과를 새로운 배열로 반환합니다.
+
+        구문
+        arr.filter(callback(element[, index[, array]])[, thisArg])
+        arr.filter(function( 현재값 ) => {
+            return  조건 
+        })
+        arr.filter( 현재값 => 조건  )
+
+
+        매개변수
+        callback : 함수 
+        element :  현재값 
+        index : 인덱스.
+        
+        반환 값
+        조건 맞는  새로운 배열.
+    </pre>
+</body>
+</html>
