@@ -1,0 +1,5 @@
+@import url('./reset.css');
+@import url('./global.css'); 
+@import url('./css_pc.css');
+@import url('./css_tab.css');
+@import url('./css_m.css');

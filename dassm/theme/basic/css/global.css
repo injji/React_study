@@ -1,0 +1,214 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+
+@font-face {
+  font-family: "SimKyungha";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202-2@1.0/SimKyungha.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GangwonEduSaeeum_OTFMediumA";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2201-2@1.0/GangwonEduSaeeum_OTFMediumA.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "OwnglyphMoogungChae";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/OwnglyphMoogungChae.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cafe24Shiningstar";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Shiningstar.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto,
+    "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR",
+    "Malgun Gothic", sans-serif !important;
+  font-weight: normal;
+  color: #291b08;
+  font-size: 1.083em;
+  background-color: #f7f4f0;
+  -ms-overflow-style: none;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+a{cursor: pointer;}
+
+.per60 {
+  width: 60%;
+  margin: 0 auto;
+}
+#top_btn {
+  display: none;
+}
+
+.navTrigger__wrap {
+  width: 31.63px;
+  height: 17.91px;
+}
+
+.navTrigger {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -2px;
+  background: none;
+  border: none;
+  text-align: center;
+}
+
+.navTrigger::after {
+  content: "MENU";
+  position: absolute;
+  font-size: 1rem;
+  letter-spacing: 0.14em;
+  bottom: -12px;
+  font-size: 0.5em;
+  left: 0;
+  color: #291b08;
+}
+
+.navTrigger span {
+  border-radius: 5px;
+  width: 100%;
+  height: 2px;
+  left: 0;
+  display: block;
+  background: #291b08;
+  position: absolute;
+}
+
+.navTrigger span:nth-child(1) {
+  top: 0;
+}
+
+.navTrigger span:nth-child(2) {
+  top: 50%;
+}
+
+.slider-div .latter_list {
+  font-family: "SimKyungha";
+}
+
+.slider-div .latter_list:nth-child(3n) {
+  font-family: "GangwonEduSaeeum_OTFMediumA";
+}
+
+.slider-div .latter_list:nth-child(5n) {
+  font-family: "OwnglyphMoogungChae";
+}
+
+.slider-div .latter_list:nth-child(1),
+.slider-div .latter_list:nth-child(7) {
+  font-family: "Cafe24Shiningstar";
+}
+
+#ft {
+  background: #e9e2da;
+}
+
+#footer .ft_info {
+  font-size: 0.8em;
+  color: #291b08;
+  padding: 10px 0;
+}
+
+#ft_copy {
+  padding: 10px 0 30px 0;
+  border-top: 1px solid #d1c5b2;
+  font-size: 0.8em;
+  color: #291b08;
+  width: 100%;
+}
+#bo_v {
+  background: none;
+}
+.btn_bo_user li,
+.cmt_btn {
+  background: none;
+}
+#bo_v_top ul {
+  background: none;
+}
+.bo_v_nb li {
+  border-top: 1px solid #b4b4b4;
+}
+.bo_v_nb li:hover {
+  background: #e9e2da;
+}
+.cmt_btn span.total:after,
+.btn_submit {
+  background: #291b08;
+}
+.cmt_btn span.total {
+  color: #291b08;
+}
+.new_icon {
+  color: #2c2c2c !important;
+  background: #ffcf4f !important;
+  border-radius: 10px !important;
+  font-weight: 500 !important;
+  font-size: 0.5em !important;
+}
+.bo_tit {
+  font-weight: normal;
+}
+a.btn_admin,
+.btn_admin {
+  color: #ffcf4f;
+}
+#bo_list tbody tr:hover {
+  border-left: none;
+  background: none;
+}
+#bo_list tbody .even td {
+  background: none;
+}
+.user_nn {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #d0d3db;
+  background: #fff;
+  color: #000;
+  vertical-align: middle;
+  border-radius: 3px;
+  padding: 5px;
+  -webkit-box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgb(0 0 0 / 8%);
+}
+
+.td_name {
+  text-align: center !important;
+}
+#bo_list tbody tr {
+  border-bottom: 2px solid #291b08;
+}
+
+.dassm_about {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 80px;
+  font-size: 1em;
+  line-height: 1.8em;
+}
+
+.more_opt  { background: #fff !important; }
+#bo_list .td_name { width: 30%; }
+#bo_w #wr_password, #bo_w #wr_homepage { margin-left: 0; margin-bottom: 0; }
